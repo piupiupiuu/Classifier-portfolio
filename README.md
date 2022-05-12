@@ -9,5 +9,5 @@ Bias of the portfolio:
                           **= E(w1θ1_hat) + E(w2θ2_hat) - θ**  
                           **= E(w1θ1_hat) + E(w2θ2_hat) - (w1+w2)θ**  
                           **= w1E(θ1_hat) + w2E(θ2_hat) - w1θ - w2θ**  
-                          **= w1(E(θ1_hat) - θ) + w2(E(θ2_hat) - θ) **  
+                          **= w1(E(θ1_hat) - θ) + w2(E(θ2_hat) - θ)**  
                           **=w1bias(θ1_hat) + w2bias(θ2_hat)**  
