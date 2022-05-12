@@ -13,3 +13,12 @@ Bias of the portfolio:
                           **= w1E(θ1_hat) + w2E(θ2_hat) - w1θ - w2θ**  
                           **= w1(E(θ1_hat) - θ) + w2(E(θ2_hat) - θ)**  
                           **=w1bias(θ1_hat) + w2bias(θ2_hat)**  
+
+## 2. Variance:
+standard deviation of the first classifier: **std(θ1_hat)** 
+standard deviation of the second classifier: **std(θ2_hat)**  
+standard deviation of the portfolio:  
+**std(w1θ1_hat + w2θ2_hat)^2 = var(w1θ1_hat) + var(w2θ2_hat) + 2w1w2Cov(θ1_hat,θ2_hat)**  
+                         **= w1^2var(θ1_hat) + w2^2var(θ2_hat) + 2w1w2Cov(θ1_hat,θ2_hat)**   
+                         **= w1^2std(θ1_hat)^2 + w2^2std(θ2_hat)^2 + 2w1w2pstd(θ1_hat)std(θ2_hat)**   
+                         **=< (w1std(θ1_hat) + w2std(θ2_hat))^2**  
