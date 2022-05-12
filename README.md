@@ -33,7 +33,10 @@ Now we add another classifier with 0 variance but high variance (stable classifi
 
 ## 4. Algorithm:
 w1 = weight of classifier 1, w2 = weight of classifier 2, w = weight of stable classifier, where w1 + w2 = 1  
-1. Find the weight **w1 w2** which maximizes **the absolute slope = (bias(θ_stable_hat) - bias(w1θ1_hat + w2θ2_hat)) / std(w1θ1_hat + w2θ2_hat)** where **std(w1θ1_hat + w2θ2_hat) = (w1^2std(θ1_hat)^2 + w2^2std(θ2_hat)^2 + 2w1w2pstd(θ1_hat)std(θ2_hat))^0.5** and **bias(w1θ1_hat + w2θ2_hat)) = w1bias(θ1_hat) + w2bias(θ2_hat)**  
+1. Find the weight **w1 w2** which maximizes:  
+**the absolute slope = (bias(θ_stable_hat) - bias(w1θ1_hat + w2θ2_hat)) / std(w1θ1_hat + w2θ2_hat)**   
+where **std(w1θ1_hat + w2θ2_hat) = (w1^2std(θ1_hat)^2 + w2^2std(θ2_hat)^2 + 2w1w2pstd(θ1_hat)std(θ2_hat))^0.5**  
+**bias(w1θ1_hat + w2θ2_hat)) = w1bias(θ1_hat) + w2bias(θ2_hat)**   
 2. Based on the risk preference, choose the weight w to generate a portfolio: w*stable_classifier + (1-w)*(w1*classifier_1 + w2*classifier 2)
 
 
