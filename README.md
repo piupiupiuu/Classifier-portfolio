@@ -25,6 +25,7 @@ standard deviation of the portfolio:
 This is where we get the benefit from the combination of the classifiers.
 
 ## 3. Efficient frontier：
+![](./efficient frontier.PNG)
 
 
 
